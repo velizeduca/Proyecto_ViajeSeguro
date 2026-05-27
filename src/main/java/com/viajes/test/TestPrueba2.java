@@ -42,7 +42,7 @@ public class TestPrueba2 {
 		b.setDescripModelo("KJ-4522026");
 		b.setNroPlaca("YYY-251");
 		b.setCapacidadPasajeros(80);
-		b.setDescripEstado("ACTIVO");
+		b.setNomEstado("ACTIVO");
 		//GUARDAR
 		em.persist(b);
 		//confirmar la operacion o la transaccion
@@ -80,7 +80,7 @@ public class TestPrueba2 {
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
 			            b.getCapacidadPasajeros(),
-			            b.getDescripEstado());
+			            b.getNomEstado());
    }
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -109,7 +109,7 @@ public class TestPrueba2 {
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
 			            b.getCapacidadPasajeros(),
-			            b.getDescripEstado());
+			            b.getNomEstado());
 		}else
 		{
 			System.out.println("Bus no encontrado");
@@ -138,7 +138,7 @@ public class TestPrueba2 {
 				b.setDescripModelo("Scania 2026");
 				b.setNroPlaca("KJ-4522026");
 				b.setCapacidadPasajeros(70);
-				b.setDescripEstado("ACTIVO");
+				b.setNomEstado("ACTIVO");
 				//ACTUALIZAR
 				em.merge(b);
 				//confirmar la transaccion
@@ -162,7 +162,7 @@ public class TestPrueba2 {
 			int codigoBus=4;
 			Bus b=em.find(Bus.class, codigoBus);
 			if(b!=null) {
-				b.setDescripEstado("INACTIVO");
+				b.setNomEstado("INACTIVO");
 				em.merge(b);
 				em.getTransaction().commit();
 				System.out.println("Bus desactivado");

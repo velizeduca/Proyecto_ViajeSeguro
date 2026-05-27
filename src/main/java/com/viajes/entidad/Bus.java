@@ -99,14 +99,17 @@ public void setNroPlaca(String nroPlaca) {
 
 
 
-public String getDescripEstado() {
-	return descripEstado;
+
+
+
+public String getNomEstado() {
+	return nomEstado;
 }
 
 
 
-public void setDescripEstado(String descripEstado) {
-	this.descripEstado = descripEstado;
+public void setNomEstado(String nomEstado) {
+	this.nomEstado = nomEstado;
 }
 
 
