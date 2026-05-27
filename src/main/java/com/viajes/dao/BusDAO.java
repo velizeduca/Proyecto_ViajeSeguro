@@ -14,7 +14,7 @@ public class BusDAO implements IBusDAO{
 	
 	
 	@Override
-	public  void registrarBus(Bus b) {
+	public  void registrar(Bus b) {
 		try {
 			em.getTransaction().begin();
 			em.persist(b);
@@ -27,7 +27,7 @@ public class BusDAO implements IBusDAO{
 	}
 
 	@Override
-	public void actualizarBus(Bus b) {
+	public void actualizar(Bus b) {
 		try {
 			em.getTransaction().begin();
 			em.merge(b);
@@ -41,7 +41,7 @@ public class BusDAO implements IBusDAO{
 	}
 
 	@Override
-	public Bus buscarBus(int id) {
+	public Bus buscar(int id) {
 		Bus b=null;
 		try {
 			b=em.find(Bus.class, id);
@@ -66,7 +66,7 @@ public class BusDAO implements IBusDAO{
 	}
 
 	@Override
-	public void eliminarLogicoBus(int id) {
+	public void eliminarLogico(int id) {
 	 try {
 		 em.getTransaction().begin();
 		 Bus b=em.find(Bus.class, id);
