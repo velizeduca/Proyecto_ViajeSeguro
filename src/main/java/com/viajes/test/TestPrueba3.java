@@ -30,7 +30,7 @@ public class TestPrueba3 {
 			b.setDescripModelo("SCANIA 2026");
 			b.setNroPlaca("KKP-251");
 			b.setCapacidadPasajeros(75);
-			b.setNomEstado("Activo");	
+			b.setDescripEstado("Activo");	
 			dao.registrarBus(b);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -59,7 +59,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
             b.getDescripModelo(),
             b.getNroPlaca(),
             b.getCapacidadPasajeros(),
-            b.getNomEstado());
+            b.getDescripEstado());
 }
 	
 	}
@@ -77,7 +77,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 		b.setDescripModelo("VOLVO 2027");
 		b.setNroPlaca("VOL-555");
 		b.setCapacidadPasajeros(80);
-		b.setNomEstado("ACTIVO");
+		b.setDescripEstado("ACTIVO");
 		dao.actualizarBus(b);
 		
 	}
@@ -112,7 +112,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
 			            b.getCapacidadPasajeros(),
-			            b.getNomEstado());
+			            b.getDescripEstado());
 		}else
 		{
 			System.out.println("Bus no encontrado");

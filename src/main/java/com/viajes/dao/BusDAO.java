@@ -73,7 +73,7 @@ public class BusDAO implements IBusDAO{
 		 
 		 //validar el objeto b
 		 if(b!=null) {
-			 b.setNomEstado("INACTIVO");
+			 b.setDescripEstado("INACTIVO");
 			 em.merge(b);
 			 em.getTransaction().commit();
 			 System.out.println("bus desactivado");

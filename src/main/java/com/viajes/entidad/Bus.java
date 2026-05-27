@@ -33,7 +33,7 @@ private String nroPlaca;
 private int capacidadPasajeros;
 
 @Column(name = "estado")
-private String nomEstado;
+private String descripEstado;
 
 
 
@@ -95,14 +95,18 @@ public void setNroPlaca(String nroPlaca) {
 
 
 
-public String getNomEstado() {
-	return nomEstado;
+
+
+
+
+public String getDescripEstado() {
+	return descripEstado;
 }
 
 
 
-public void setNomEstado(String nomEstado) {
-	this.nomEstado = nomEstado;
+public void setDescripEstado(String descripEstado) {
+	this.descripEstado = descripEstado;
 }
 
 
