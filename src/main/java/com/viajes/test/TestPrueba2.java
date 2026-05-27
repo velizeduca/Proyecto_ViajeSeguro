@@ -41,7 +41,7 @@ public class TestPrueba2 {
 		b.setMarcaB(mb);
 		b.setDescripModelo("KJ-4522026");
 		b.setNroPlaca("YYY-251");
-		b.setCapacidad(80);
+		b.setCapacidadPasajeros(80);
 		b.setNomEstado("ACTIVO");
 		//GUARDAR
 		em.persist(b);
@@ -79,7 +79,7 @@ public class TestPrueba2 {
 			            b.getMarcaB().getNomMarca(),
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
-			            b.getCapacidad(),
+			            b.getCapacidadPasajeros(),
 			            b.getNomEstado());
    }
 		} catch (Exception e) {
@@ -108,7 +108,7 @@ public class TestPrueba2 {
 			            b.getMarcaB().getNomMarca(),
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
-			            b.getCapacidad(),
+			            b.getCapacidadPasajeros(),
 			            b.getNomEstado());
 		}else
 		{
@@ -137,7 +137,7 @@ public class TestPrueba2 {
 				b.setMarcaB(mb);
 				b.setDescripModelo("Scania 2026");
 				b.setNroPlaca("KJ-4522026");
-				b.setCapacidad(70);
+				b.setCapacidadPasajeros(70);
 				b.setNomEstado("ACTIVO");
 				//ACTUALIZAR
 				em.merge(b);

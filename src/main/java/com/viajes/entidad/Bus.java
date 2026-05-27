@@ -30,7 +30,7 @@ private String descripModelo;
 private String nroPlaca;
 
 @Column(name = "capacidad")
-private int capacidad;
+private int capacidadPasajeros;
 
 @Column(name = "estado")
 private String nomEstado;
@@ -91,15 +91,7 @@ public void setNroPlaca(String nroPlaca) {
 
 
 
-public int getCapacidad() {
-	return capacidad;
-}
 
-
-
-public void setCapacidad(int capacidad) {
-	this.capacidad = capacidad;
-}
 
 
 
@@ -111,6 +103,18 @@ public String getNomEstado() {
 
 public void setNomEstado(String nomEstado) {
 	this.nomEstado = nomEstado;
+}
+
+
+
+public int getCapacidadPasajeros() {
+	return capacidadPasajeros;
+}
+
+
+
+public void setCapacidadPasajeros(int capacidadPasajeros) {
+	this.capacidadPasajeros = capacidadPasajeros;
 }
 
 

@@ -29,7 +29,7 @@ public class TestPrueba3 {
 			b.setMarcaB(mb);
 			b.setDescripModelo("SCANIA 2026");
 			b.setNroPlaca("KKP-251");
-			b.setCapacidad(75);
+			b.setCapacidadPasajeros(75);
 			b.setNomEstado("Activo");	
 			dao.registrar(b);
 		} catch (Exception e) {
@@ -58,7 +58,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
             b.getMarcaB().getNomMarca(),
             b.getDescripModelo(),
             b.getNroPlaca(),
-            b.getCapacidad(),
+            b.getCapacidadPasajeros(),
             b.getNomEstado());
 }
 	
@@ -76,7 +76,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 		b.setMarcaB(mb);
 		b.setDescripModelo("VOLVO 2027");
 		b.setNroPlaca("VOL-555");
-		b.setCapacidad(80);
+		b.setCapacidadPasajeros(80);
 		b.setNomEstado("ACTIVO");
 		dao.actualizar(b);
 		
@@ -111,7 +111,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 			            b.getMarcaB().getNomMarca(),
 			            b.getDescripModelo(),
 			            b.getNroPlaca(),
-			            b.getCapacidad(),
+			            b.getCapacidadPasajeros(),
 			            b.getNomEstado());
 		}else
 		{
