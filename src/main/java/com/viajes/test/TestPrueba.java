@@ -56,7 +56,7 @@ public class TestPrueba {
 		//declarar un objeto de tipo Ciudad
 		Ciudad c=new Ciudad();
 		//setear
-		c.setNombre("Junin");
+		c.setNomCiudad("Junin");
 		c.setEstado("Activo");
 		//guardar
 		em.persist(c);// insert into
@@ -79,7 +79,7 @@ public class TestPrueba {
 			//validamos al objeto c
 			if(c!=null) {
 				System.out.println("ID..:"+c.getIdCiudad());
-				System.out.println("Nombre.:"+c.getNombre());
+				System.out.println("Nombre.:"+c.getNomCiudad());
 				System.out.println("Estado..:"+c.getEstado());
 			}
 			else {
@@ -100,7 +100,7 @@ public class TestPrueba {
 			
 			//validar el objeto c
 			if(c!=null) {
-				c.setNombre("Lima Metropolitana");
+				c.setNomCiudad("Lima Metropolitana");
 				em.merge(c);//actualiza update
 				em.getTransaction().commit();
 				System.out.println("Ciudad actualizado correctamente");
@@ -147,7 +147,7 @@ public class TestPrueba {
 		  //hacer un recorrido
 		  for(Ciudad c:lista) {
 			  System.out.println("ID..:"+c.getIdCiudad());
-			  System.out.println("Nombre..:"+c.getNombre());
+			  System.out.println("Nombre..:"+c.getNomCiudad());
 			  System.out.println("Estado..:"+c.getEstado());
 			  System.out.println("---------------------------------");
 		  }

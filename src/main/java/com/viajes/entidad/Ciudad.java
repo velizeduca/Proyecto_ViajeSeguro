@@ -19,7 +19,7 @@ public class Ciudad {
 private int idCiudad;
 
 @Column (name = "nombre")
-private String nombre;
+private String nomCiudad;
 
 @Column(name = "estado")
 private String estado;
@@ -44,14 +44,18 @@ public void setIdCiudad(int idCiudad) {
 
 
 
-public String getNombre() {
-	return nombre;
+
+
+
+
+public String getNomCiudad() {
+	return nomCiudad;
 }
 
 
 
-public void setNombre(String nombre) {
-	this.nombre = nombre;
+public void setNomCiudad(String nomCiudad) {
+	this.nomCiudad = nomCiudad;
 }
 
 
