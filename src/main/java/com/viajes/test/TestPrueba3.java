@@ -31,7 +31,7 @@ public class TestPrueba3 {
 			b.setNroPlaca("KKP-251");
 			b.setCapacidadPasajeros(75);
 			b.setNomEstado("Activo");	
-			dao.registrar(b);
+			dao.registrarBus(b);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -40,7 +40,7 @@ public class TestPrueba3 {
 //metodo para listar los buses
 	public static void listarBuses() {
 		BusDAO dao=new BusDAO();
-		List<Bus>listame=dao.listar();
+		List<Bus>listame=dao.listarBus();
 		
 		System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 				"ID",
@@ -68,7 +68,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 	public static void actualizarDatosBus() {
 		BusDAO dao=new BusDAO();
 		//
-		Bus b=dao.buscar(2);
+		Bus b=dao.buscarBus(2);
 		//asigna nueva marca
 		MarcaBus mb=new MarcaBus();
 		mb.setIdMarca(2);
@@ -78,7 +78,7 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 		b.setNroPlaca("VOL-555");
 		b.setCapacidadPasajeros(80);
 		b.setNomEstado("ACTIVO");
-		dao.actualizar(b);
+		dao.actualizarBus(b);
 		
 	}
 	
@@ -86,14 +86,14 @@ System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",
 	
 	public static void eliminarLogicamemteBus() {
 		BusDAO dao=new BusDAO();
-		dao.eliminarLogico(4);
+		dao.eliminarLogicoBus(4);
 	}
 	
 	
 	//metodo para buscar el codigo de bus
 	public static void buscarBusXcodigo() {
 		BusDAO dao=new BusDAO();
-		Bus b=dao.buscar(2);
+		Bus b=dao.buscarBus(2);
 		
 		if(b!=null) {			
 			System.out.printf("%-5s %-15s %-15s %-12s %-12s %-10s\n",

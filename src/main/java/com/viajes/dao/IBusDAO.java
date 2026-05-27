@@ -6,10 +6,10 @@ import com.viajes.entidad.Bus;
 
 public interface IBusDAO {
 	
-	void registrar(Bus b);
-	void actualizar(Bus b);
-	Bus buscar(int id);
-	List<Bus>listar();
-	void eliminarLogico(int id);
+	void registrarBus(Bus b);
+	void actualizarBus(Bus b);
+	Bus buscarBus(int id);
+	List<Bus>listarBus();
+	void eliminarLogicoBus(int id);
 
 }
