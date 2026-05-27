@@ -33,7 +33,7 @@ private String nroPlaca;
 private int capacidadPasajeros;
 
 @Column(name = "estado")
-private String descripEstado;
+private String nomEstado;
 
 
 
